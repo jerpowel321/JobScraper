@@ -11,11 +11,11 @@ class Job():
         self.location = post.location
         self.url = post.url
 
-def search_monster(q, location):
+def search_monster(query, location):
     baseURL="https://www.monster.com/jobs/search/?"
-    q="q=Web-Developer"
-    location="&where=San-Francsico"
-    url=baseURL+q+location
+    q=query
+    location=location
+    url=baseURL+ "q=" + q + "&where=" + location
     print(url)
 
 
