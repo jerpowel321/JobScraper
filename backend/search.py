@@ -11,7 +11,7 @@ class Job():
         self.location = post.location
         self.url = post.url
 
-def monster(q, location):
+def search_monster(q, location):
     baseURL="https://www.monster.com/jobs/search/?"
     q="q=Web-Developer"
     location="&where=San-Francsico"
